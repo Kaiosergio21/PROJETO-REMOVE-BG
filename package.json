@@ -1,0 +1,19 @@
+{
+  "name": "projeto-remove-bg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/body-pix": "^2.2.1",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "canvas": "^3.2.0",
+    "express": "^5.1.0",
+    "multer": "^2.0.2"
+  }
+}

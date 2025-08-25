@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Remover Fundo</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1>Selecione a área do objeto</h1>
+
+<!-- Escondemos o input real -->
+<input type="file" id="upload" accept="image/*" hidden>
+
+<!-- Label funciona como botão -->
+<label for="upload" class="upload-btn">📂 Escolher Imagem</label>
+
+<br><br>
+
+<div class="canvas-container">
+  <canvas id="canvas"></canvas>
+</div>
+
+<br>
+<button id="send">Remover Fundo</button>
+
+<script src="script.js">
+
+</script>
+</body>
+</html>
