@@ -3,13 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <title>Remover Fundo</title>
-
 <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
 
-    <h1>Selecione a área do objeto</h1>
+  <!-- Menu Hamburger -->
+<div class="hamburger-menu">
+  <div class="hamburger-icon" id="hamburgerIcon">&#9776;</div>
+  <div class="menu-content" id="menuContent">
+    <h3>Plano de Fundo</h3>
+    <button class="bg-btn" data-color="linear-gradient(to right, #ff7e5f, #feb47b)">Laranja</button>
+    <button class="bg-btn" data-color="linear-gradient(to right, #43cea2, #185a9d)">Verde/Azul</button>
+    <button class="bg-btn" data-color="linear-gradient(to right, #ff6a00, #ee0979)">Rosa/Laranja</button>
+    <button class="bg-btn" data-color="linear-gradient(to right, #00c6ff, #0072ff)">Azul</button>
+    <button class="bg-btn" data-color="#ffffff">Branco</button>
+   
+  </div>
+</div>
+
+
+<h1>Selecione a área do objeto</h1>
 
 <!-- Escondemos o input real -->
 <input type="file" id="upload" accept="image/*" hidden>
@@ -24,10 +37,17 @@
 </div>
 
 <br>
+
+<!-- Botões -->
 <button id="send">Remover Fundo</button>
 
-<script src="script.js">
+<button id="resetBtn">Resetar Seleção</button>
 
-</script>
+<button id="fullscreenBtn">Tela Cheia</button>
+
+
+
+
+<script src="script.js"></script>
 </body>
 </html>

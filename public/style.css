@@ -1,3 +1,51 @@
+
+/* Hamburger menu */
+.hamburger-menu {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+}
+
+.hamburger-icon {
+  font-size: 28px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.menu-content {
+  display: none;
+  margin-top: 5px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.menu-content h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+
+.menu-content .bg-btn {
+  display: block;
+  width: 150px;
+  margin: 5px 0;
+  padding: 5px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Ajuste para cores claras */
+.bg-btn[data-color="#ffffff"] { color: #000; background: #ccc; }
+.bg-btn[data-color="#000000"] { color: #fff; background: #333; }
+
+
 /* Reset básico */
 * {
   margin: 0;
@@ -99,4 +147,15 @@ canvas {
   max-height: 60vh;
   overflow: auto;
   border-radius: 12px;
+}
+
+
+
+.canvas-container:fullscreen {
+  width: 100vw;
+  height: 100vh;
+  background: #000; /* fundo escuro no modo fullscreen */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
